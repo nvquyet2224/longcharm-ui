@@ -1,0 +1,13 @@
+https://www.figma.com/design/elRNTPQvmgFuE6G0SXMoYO/Scent.vn--Oolong-Tea-Landing-page?node-id=0-1&p=f&t=pjP1OoNWE78L1ajo-0
+
+grid:
+https://codepen.io/cesalberca/pen/aEdGwj/
+
+
+1. link của bộ công thuong
+2. link DMCA
+3. link zalo [ nếu cần thì anh sẽ gắn thêm lên website khúc này anh đang thiếu so với design]
+4. nội dung đang discuss về thông tin của từng sản phẩm 
+--> thay khúc nào
+suggest: team vào cms thay để dùng thử
+

@@ -1,0 +1,42 @@
+@use "function" as f;
+
+
+.page_404 {
+    text-align: center;
+    min-height: 400px;
+}
+
+@media screen and (min-width: 1024px) {
+    .page_404 {
+        padding: f.vwPc(60) 0;
+        h2 {
+            font-size: f.vwPc(60);
+            margin-bottom: f.vwPc(10);
+        }
+        h3 {
+            font-size: f.vwPc(24);
+            font-weight: 400;
+            margin-bottom: f.vwPc(30);
+        }
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+   
+}
+
+@media screen and (max-width: 1023px) {
+    .page_404 {
+        padding: f.vwSp(60) 0;
+        h2 {
+            font-size: f.vwSp(60);
+            margin-bottom: f.vwSp(10);
+        }
+        h3 {
+            font-size: f.vwSp(20);
+            font-weight: 400;
+            margin-bottom: f.vwSp(30);
+        }
+    }
+   
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Camping Chair (FREE!!!)
+* source:	https://sketchfab.com/3d-models/camping-chair-free-0e41bd5fbe734f91a90116a3d9f224da
+* author:	SyntaX (https://sketchfab.com/syntaxcg)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Camping Chair (FREE!!!)" (https://sketchfab.com/3d-models/camping-chair-free-0e41bd5fbe734f91a90116a3d9f224da) by SyntaX (https://sketchfab.com/syntaxcg) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

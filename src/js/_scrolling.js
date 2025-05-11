@@ -40,7 +40,7 @@ export function onScroll() {
       });
       var scrollTop = $(this).scrollTop();
       if (scrollTop > lastScrollTop) {
-        if (scrollTop >= 200) {
+        if (scrollTop >= 45) {
           $('.header').addClass('sticky');
         }
       } else if (scrollTop < lastScrollTop) {

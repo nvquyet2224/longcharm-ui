@@ -987,6 +987,9 @@ form input:not([type=checkbox]):not([type=radio]) {
   width: inherit;
   height: inherit;
 }
+.header_top_item--search a:hover svg, .header_top_item--wishlist a:hover svg, .header_top_item--account a:hover svg, .header_top_item--store a:hover svg {
+  fill: var(--global-color);
+}
 .header_menu {
   padding-top: 6px;
 }
@@ -1297,6 +1300,9 @@ form input:not([type=checkbox]):not([type=radio]) {
 }
 
 @media screen and (min-width: 769px) {
+  .header.sticky {
+    top: -37px;
+  }
   .header:hover {
     background-color: #fff;
   }

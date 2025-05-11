@@ -63,6 +63,5 @@ function toggleAccordion() {
 (function () {
   navClick();
   toggleAccordion();
-  //dropdown-menu
 
 })();

@@ -236,6 +236,19 @@
                     }
                 }
             }
+
+            &--search,
+            &--wishlist,
+            &--account,
+            &--store {
+                a {
+                    &:hover {
+                        svg {
+                            fill: var(--global-color);
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -401,13 +414,6 @@
     }
 }
 
-// .dropdown-menu {
-//     display: none;
-// }
-
-// .show .dropdown-menu {
-//     display: block;
-// }
 
 .side {
     position: fixed;
@@ -611,6 +617,10 @@
 
 @media screen and (min-width: 769px) {
     .header {
+        &.sticky {
+            top: -37px;
+        }
+        
         &:hover {
             background-color: #fff;
 

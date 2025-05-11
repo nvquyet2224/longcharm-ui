@@ -228,6 +228,12 @@ function onScroll() {
 
       });
       var scrollTop = $(this).scrollTop();
+      if (scrollTop > 45) {
+         $('.header').addClass('sticky');
+      } else {
+         $('.header').removeClass('sticky');
+      }
+      /*var scrollTop = $(this).scrollTop();
       if (scrollTop > lastScrollTop) {
         $('.header').removeClass('sticky');
       } else if (scrollTop < lastScrollTop) {
@@ -236,9 +242,8 @@ function onScroll() {
         } else {
           $('.header').addClass('sticky');
         }
-
       }
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;*/
     }, 50);
   }
 
@@ -257,6 +262,7 @@ function onScroll() {
 }
 
 (function () {
+  onScroll();
   motionGallery();
   collectionGallery();
   productGallery();

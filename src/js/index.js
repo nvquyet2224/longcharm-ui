@@ -1,9 +1,9 @@
 import "../sass/index.scss";
 import $ from "jquery";
 import Swiper, { Pagination, Navigation, Scrollbar, Mousewheel, FreeMode } from "swiper";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import { CountUp } from 'countup.js';
+//import gsap from "gsap";
+//import ScrollTrigger from "gsap/ScrollTrigger";
+//import { CountUp } from 'countup.js';
 
 
 export { Swiper, Pagination };
@@ -12,13 +12,13 @@ export { $ };
 function motionGallery() {
   if (document.querySelector(".motionSlider")) {
     new Swiper(".motionSlider", {
-      modules: [Navigation],
+      modules: [Navigation, Pagination],
       effect: "slide",
       loop: false,
       speed: 800,
       preloadImages: false,
       lazy: true,
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 4,
       freeMode: true,
       grabCursor: true,
@@ -48,6 +48,10 @@ function motionGallery() {
         nextEl: "#motion .swiper-button-next",
         prevEl: "#motion .swiper-button-prev",
       },
+      pagination: {
+        el: "#motion .swiper-pagination",
+        clickable: true,
+      },
       on: {
         init: function (swiper) { },
         transitionStart: function () {
@@ -59,7 +63,6 @@ function motionGallery() {
 
 }
 
-
 function collectionGallery() {
   if (document.querySelector(".collectionSlider")) {
     new Swiper(".collectionSlider", {
@@ -69,32 +72,18 @@ function collectionGallery() {
       speed: 800,
       preloadImages: false,
       lazy: true,
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 4,
       freeMode: true,
       grabCursor: true,
       allowTouchMove: true,
       watchOverflow: true,
-      // scrollbar: {
-      //   el: '.luminous__gallery .swiper-scrollbar',
-      //   hide: false,
-      //   draggable: true
-      // },
-      // mousewheel: {
-      //   sensitivity: 1,
-      //   forceToAxis: true, // Bắt buộc cuộn theo trục chính
-      //   releaseOnEdges: true, // Tiếp tục cuộn khi đến cuối
-      // },
       breakpoints: {
         1023: {
           slidesPerView: 3,
           spaceBetween: 4
         }
       },
-      // pagination: {
-      //   el: ".luminous .swiper-pagination",
-      //   clickable: true,
-      // },
       navigation: {
         nextEl: "#collection .swiper-button-next",
         prevEl: "#collection .swiper-button-prev",
@@ -110,6 +99,81 @@ function collectionGallery() {
 
 }
 
+function productGallery() {
+  if (document.querySelector(".productSlider")) {
+    new Swiper(".productSlider", {
+      modules: [Navigation, Pagination],
+      effect: "slide",
+      loop: false,
+      speed: 800,
+      preloadImages: false,
+      lazy: true,
+      slidesPerView: 2,
+      spaceBetween: 4,
+      freeMode: true,
+      grabCursor: true,
+      allowTouchMove: true,
+      watchOverflow: true,
+      breakpoints: {
+        1023: {
+          slidesPerView: 4,
+          spaceBetween: 4
+        }
+      },
+      navigation: {
+        nextEl: "#product .swiper-button-next",
+        prevEl: "#product .swiper-button-prev",
+      },
+      pagination: {
+        el: "#product .swiper-pagination",
+        clickable: true,
+      },
+      on: {
+        init: function (swiper) { },
+        transitionStart: function () {
+        },
+        transitionEnd: function () { },
+      },
+    });
+  }
+
+}
+
+function newGallery() {
+  if (document.querySelector(".newSlider")) {
+    new Swiper(".newSlider", {
+      modules: [Navigation],
+      effect: "slide",
+      loop: false,
+      speed: 800,
+      preloadImages: false,
+      lazy: true,
+      slidesPerView: 1,
+      spaceBetween: 4,
+      freeMode: true,
+      grabCursor: true,
+      allowTouchMove: true,
+      watchOverflow: true,
+      breakpoints: {
+        1023: {
+          slidesPerView: 3,
+          spaceBetween: 4
+        }
+      },
+      navigation: {
+        nextEl: "#news .swiper-button-next",
+        prevEl: "#news .swiper-button-prev",
+      },
+      on: {
+        init: function (swiper) { },
+        transitionStart: function () {
+        },
+        transitionEnd: function () { },
+      },
+    });
+  }
+
+}
 
 function onScroll() {
   var windowH = 0;
@@ -195,4 +259,6 @@ function onScroll() {
 (function () {
   motionGallery();
   collectionGallery();
+  productGallery();
+  newGallery();
 })();

@@ -10,6 +10,8 @@ let fs = require("fs");
 
 const preload = fs.readFileSync(__dirname + "/src/_preload.html");
 const headerComponent = fs.readFileSync(__dirname + "/src/_component-header.html");
+const videoComponent = fs.readFileSync(__dirname + "/src/_component-video.html");
+const homeComponent = fs.readFileSync(__dirname + "/src/_component-home.html");
 const footerComponent = fs.readFileSync(__dirname + "/src/_component-footer.html");
 const svg = fs.readFileSync(__dirname + "/src/_svg.html");
 
@@ -120,6 +122,8 @@ module.exports = {
       preload: preload,
       svg: svg,
       header: headerComponent,
+      video: videoComponent,
+      home: homeComponent,
       footer: footerComponent,
       template: "src/index.html",
       minify: minify,

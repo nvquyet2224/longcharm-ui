@@ -175,6 +175,45 @@ function newGallery() {
 
 }
 
+
+function artImgGallery() {
+  if (document.querySelector(".artImgSlider")) {
+    new Swiper(".artImgSlider", {
+      modules: [Navigation],
+      effect: "slide",
+      loop: false,
+      speed: 800,
+      preloadImages: false,
+      lazy: true,
+      slidesPerView: 3,
+      spaceBetween: 4,
+      freeMode: true,
+      grabCursor: true,
+      allowTouchMove: true,
+      watchOverflow: true,
+      breakpoints: {
+        1023: {
+          slidesPerView: 6,
+          spaceBetween: 4
+        }
+      },
+      navigation: {
+        nextEl: "#news .swiper-button-next",
+        prevEl: "#news .swiper-button-prev",
+      },
+      on: {
+        init: function (swiper) { },
+        transitionStart: function () {
+        },
+        transitionEnd: function () { },
+      },
+    });
+  }
+
+}
+
+
+
 function onScroll() {
   var windowH = 0;
   setTimeout(() => {
@@ -267,4 +306,5 @@ function onScroll() {
   collectionGallery();
   productGallery();
   newGallery();
+  artImgGallery();
 })();

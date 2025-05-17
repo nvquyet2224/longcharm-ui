@@ -1386,10 +1386,7 @@
         </symbol>
     </defs>
 </svg>
-            <header class="header transparent">
-
-    <!-- Campaign Banner Component renders here -->
-    <!-- <div class="experience-region experience-headerbanner"></div> -->
+        <header class="header transparent">
 
     <div class="header_tagline">
         <ul class="slider-tagline">
@@ -1441,8 +1438,7 @@
             </li>
 
             <li class="header_top_item header_top_item--store pc" title="Find a boutique" id="block-storepagelink">
-                <a href="https://www.longchamp.com/sg/en/stores?showMap=true"
-                    class="link">
+                <a href="https://www.longchamp.com/sg/en/stores?showMap=true" class="link">
                     <svg class="symbol" aria-hidden="true" focusable="false">
                         <use xlink:href="#symbol-store-header">
                         </use>
@@ -1509,8 +1505,7 @@
             </li> -->
 
             <li class="header_top_item header_top_item--account" title="Account" id="block-myaccount">
-                <a href="javascript:void(0);" class="link" role="button"
-                    data-toggle="dropdown" aria-expanded="false">
+                <a href="javascript:void(0);" class="link" role="button" data-toggle="dropdown" aria-expanded="false">
                     <svg class="symbol" aria-hidden="true" focusable="false">
                         <use xlink:href="#symbol-user-header">
                         </use>
@@ -5930,8 +5925,7 @@
 
 </header>
 
-<div class="side">
-    <div class="side_overlay"></div>
+<div class="side" style="display: none;">
     <div class="side_wrap">
         <div class="side_header">
             <h2 class="side_title">My wishlist</h2>
@@ -5954,46 +5948,22 @@
     </div>
 </div>
 
-<div class="dropdown-menu popin-wrapper lon-second-level header-account lon-overlay">
-    <div class="dropdown-menu--subitem--close d-none">
-        <button class="c-btn--full">
-            <span class="arrow">
-                <svg class="d-none" aria-hidden="true" focusable="false">
-                    <use xlink:href="#symbol-vector-left">
+
+<div class="side">
+    <div class="side_wrap">
+        <div class="side_header">
+            <h2 class="side_title">My Account</h2>
+            <span class="side_close">
+                <svg class="symbol" focusable="false">
+                    <use xlink:href="#symbol-close-cart">
                     </use>
                 </svg>
             </span>
-            <span class="title">My Account</span>
-            <span class="sr-only">back to main menu</span>
-        </button>
-    </div>
-    <button class="js-btn-close c-btn fs-m btn__close btn__close_account">
-        <span class="visually-hidden">Close</span>
-        <svg class="symbol" aria-hidden="true" focusable="false">
-            <use xlink:href="#symbol-close-cart">
-            </use>
-        </svg>
-    </button>
-    <div class="popover popover-bottom popover-login">
-
-        <div class="panel-Login">
-            <h2 role="heading" class="title" aria-level="2">
-                My Account
-            </h2>
-            <div class="login-panel">
-                <div class="return-back">
-                    <svg class="symbol symbol--xl" aria-hidden="true" focusable="false">
-                        <use xlink:href="#symbol-vector-left">
-                        </use>
-                    </svg>
-                </div>
-                <div id="targetElement" class="login-panel-content"
-                    data-url="/on/demandware.store/Sites-Longchamp-ASIA-Site/en_SG/Account-GetLogin">
-                </div>
-            </div>
+        </div>
+        <div class="side_body">
             <div class="login-menu">
-                <div class="my-account m-0">
-                    <a href="javascript:void(0);" class="loadDataButton link flex flex-between">
+                <div class="my-account">
+                    <a href="javascript:void(0);" class="link flex flex-between">
                         <span>Login</span>
                         <svg class="symbol--s" focusable="false">
                             <use xlink:href="#symbol-vector">
@@ -6010,7 +5980,7 @@
                     </a>
                 </div>
                 <div class="my-account-track-orders">
-                    <a id="track-orders-btn" class="js-header-create-account link flex flex-between"
+                    <a id="track-orders-btn" class="link flex flex-between"
                         href="https://www.longchamp.com/sg/en/CheckOrder" title="Track orders">
                         <span>Track my order</span>
                         <svg class="symbol--s" focusable="false">
@@ -6021,7 +5991,12 @@
                 </div>
             </div>
         </div>
-
+        <!-- <div class="side_footer">
+            <div class="login_request">
+                <a class="but-primary" href="#">Login</a>
+                <a class="but-primary" href="#">Create an account</a>
+            </div>
+        </div> -->
     </div>
 </div>
 
@@ -6065,800 +6040,1181 @@
         </div>
     </div>
 </div>
-            <!-- https://players.brightcove.net/6056665184001/OzCAmKTnD_default/index.html?videoId=6370222187112 -->
-                <div id="maincontent">
-                    <div class="iframe--video">
-                        <iframe class="pc" id="iframeVideo" width="100%" height="100%"
-                            src="https://players.brightcove.net/6056665184001/OzCAmKTnD_default/index.html?videoId=6370222187112"
-                            frameborder="0" allowfullscreen=""></iframe>
-                        <iframe class="sp" id="iframeVideo" width="100%" height="100%"
-                            src="https://players.brightcove.net/6056665184001/OzCAmKTnD_default/index.html?videoId=6370222758112"
-                            frameborder="0" allowfullscreen=""></iframe>
+        <div id="maincontent">
+    <!-- https://players.brightcove.net/6056665184001/OzCAmKTnD_default/index.html?videoId=6370222187112 -->
+    <div class="iframe--video">
+        <iframe class="pc" id="iframeVideo" width="100%" height="100%"
+            src="https://players.brightcove.net/6056665184001/OzCAmKTnD_default/index.html?videoId=6370222187112"
+            frameborder="0" allowfullscreen=""></iframe>
+        <iframe class="sp" id="iframeVideo" width="100%" height="100%"
+            src="https://players.brightcove.net/6056665184001/OzCAmKTnD_default/index.html?videoId=6370222758112"
+            frameborder="0" allowfullscreen=""></iframe>
+    </div>
+</div>
+        <div class="block__section block__section--product product__section">
+    <div class="block__title">
+        <h2>A BOHEMIAN TOUCH</h2>
+        <div class="brief">
+            <p>Discover summer-ready, nature-inspired pieces embodying life's passing pleasures. </p>
+        </div>
+    </div>
+    <div class="no-gutters">
+        <div class="region">
+            <div class="region-sticky">
+                <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw0853091b/HOMEPAGE/2025-04-08-vitamin-c/1020x1175-Mobile-Inspiration.jpg"
+                    alt="img" />
+            </div>
+        </div>
+        <div class="region">
+            <div class="region-list">
+                <div class="region-item">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="region-item">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="region-item">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="region-item">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="region-item">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="region-item">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="region-item">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="region-item">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="action__center">
+        <a href="#" class="but-primary">DISCOVER OUR SELECTION</a>
+    </div>
+</div>
+
+<div class="block__section block__section--motion">
+    <div class="block__title">
+        <h2>ELEGANCE IN MOTION</h2>
+        <div class="brief">
+            <p>Make every trip a joyful adventure.</p>
+            <p>Discover unrivalled leather accessories crafted to last.</p>
+        </div>
+    </div>
+    <div class="swiper__block" id="motion">
+        <div class="motionSlider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="motion" href="#">
+                        <div class="motion-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
+                                alt="pic" />
+                        </div>
+                        <div class="motion-txt">
+                            <span class="motion__title">Bags</span>
+                            <div class="icon-svg">
+                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
+                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337" stroke="#fff"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="motion" href="#">
+                        <div class="motion-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
+                                alt="pic" />
+                        </div>
+                        <div class="motion-txt">
+                            <span class="motion__title">Bags</span>
+                            <div class="icon-svg">
+                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
+                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337" stroke="#fff"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="motion" href="#">
+                        <div class="motion-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
+                                alt="pic" />
+                        </div>
+                        <div class="motion-txt">
+                            <span class="motion__title">Bags</span>
+                            <div class="icon-svg">
+                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
+                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337" stroke="#fff"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="motion" href="#">
+                        <div class="motion-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
+                                alt="pic" />
+                        </div>
+                        <div class="motion-txt">
+                            <span class="motion__title">Bags</span>
+                            <div class="icon-svg">
+                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
+                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337" stroke="#fff"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="motion" href="#">
+                        <div class="motion-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
+                                alt="pic" />
+                        </div>
+                        <div class="motion-txt">
+                            <span class="motion__title">Bags</span>
+                            <div class="icon-svg">
+                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
+                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337" stroke="#fff"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="motion" href="#">
+                        <div class="motion-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
+                                alt="pic" />
+                        </div>
+                        <div class="motion-txt">
+                            <span class="motion__title">Bags</span>
+                            <div class="icon-svg">
+                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
+                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337" stroke="#fff"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination sp"></div>
+        <div class="swiper-button-prev pc"></div>
+        <div class="swiper-button-next pc"></div>
+    </div>
+</div>
+
+<div class="block__section  block__section--collection">
+    <div class="block__title">
+        <div class="horse-icon">
+            <svg alt="horse stamp">
+                <use xlink:href="#symbol-stamp"></use>
+            </svg>
+        </div>
+        <h2>NEW SPRING/SUMMER 2025 COLLECTION</h2>
+        <div class="brief">
+            <p>Create looks that embody raw, elegant character inspired by nature-centric living.</p>
+        </div>
+    </div>
+    <div class="swiper__block" id="collection">
+        <div class="collectionSlider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="collection" href="#">
+                        <div class="collection-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw48dda06b/HOMEPAGE/2025-01-07-vegetable-garden-la-parisienne/630x900-Lookbook-01.jpg"
+                                alt="pic" />
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="collection" href="#">
+                        <div class="collection-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw48dda06b/HOMEPAGE/2025-01-07-vegetable-garden-la-parisienne/630x900-Lookbook-01.jpg"
+                                alt="pic" />
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="collection" href="#">
+                        <div class="collection-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw48dda06b/HOMEPAGE/2025-01-07-vegetable-garden-la-parisienne/630x900-Lookbook-01.jpg"
+                                alt="pic" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="action__center">
+        <a href="#" class="but-primary">VIEW ALL LOOKS</a>
+    </div>
+</div>
+
+<div class="block__section  block__section--product__swipe">
+    <div class="block__title">
+        <div class="horse-icon">
+            <svg alt="horse stamp">
+                <use xlink:href="#symbol-stamp"></use>
+            </svg>
+        </div>
+        <h2>ONCE LE PLIAGE, FOREVER LE PLIAGE</h2>
+        <div class="brief">
+            <p>True to form, Le Pliage bends to your will.</p>
+            <p>Embrace the colour of its iconic canvas for the new season!</p>
+        </div>
+    </div>
+    <div class="swiper__block" id="product">
+        <div class="productSlider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                                <div class="product-item__price">
+                                    <span class="price-formatted">S$240.00</span>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="product-meta">
+                            <div class="meta-tag">
+                                <span class="meta-tag--item">Recycled materials</span>
+                            </div>
+                            <div class="meta-wishlist">
+                                <svg class="icon-heart">
+                                    <use xlink:href="#symbol-wishHeart-o"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                                <div class="product-item__price">
+                                    <span class="price-formatted">S$240.00</span>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="product-meta">
+                            <div class="meta-tag">
+                                <span class="meta-tag--item">Recycled materials</span>
+                            </div>
+                            <div class="meta-wishlist">
+                                <svg class="icon-heart">
+                                    <use xlink:href="#symbol-wishHeart-o"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                                <div class="product-item__price">
+                                    <span class="price-formatted">S$240.00</span>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="product-meta">
+                            <div class="meta-tag">
+                                <span class="meta-tag--item">Recycled materials</span>
+                            </div>
+                            <div class="meta-wishlist">
+                                <svg class="icon-heart">
+                                    <use xlink:href="#symbol-wishHeart-o"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                                <div class="product-item__price">
+                                    <span class="price-formatted">S$240.00</span>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="product-meta">
+                            <div class="meta-tag">
+                                <span class="meta-tag--item">Recycled materials</span>
+                            </div>
+                            <div class="meta-wishlist">
+                                <svg class="icon-heart">
+                                    <use xlink:href="#symbol-wishHeart-o"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                                <div class="product-item__price">
+                                    <span class="price-formatted">S$240.00</span>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="product-meta">
+                            <div class="meta-tag">
+                                <span class="meta-tag--item">Recycled materials</span>
+                            </div>
+                            <div class="meta-wishlist">
+                                <svg class="icon-heart">
+                                    <use xlink:href="#symbol-wishHeart-o"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                        <div class="product-img">
+                            <img class="product-img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="product-img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
+                        <div class="product-info">
+                            <ul class="product-color">
+                                <li class="selected">
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                                <li>
+                                    <span class="product-color--item" title="Blush"></span>
+                                </li>
+                            </ul>
+                            <h3>
+                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                    bag</span>
+                                <span class="product-item__style">Blush - Canvas</span>
+                                <div class="product-item__price">
+                                    <span class="price-formatted">S$240.00</span>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="product-meta">
+                            <div class="meta-tag">
+                                <span class="meta-tag--item">Recycled materials</span>
+                            </div>
+                            <div class="meta-wishlist">
+                                <svg class="icon-heart">
+                                    <use xlink:href="#symbol-wishHeart-o"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination sp"></div>
+        <div class="swiper-button-prev pc"></div>
+        <div class="swiper-button-next pc"></div>
+    </div>
+</div>
+
+<div class="block__section block__section--news">
+    <div class="block__title">
+        <div class="horse-icon">
+            <svg alt="horse stamp">
+                <use xlink:href="#symbol-stamp"></use>
+            </svg>
+        </div>
+        <h2>News</h2>
+        <div class="brief">
+            <p>Stay up to date with our latest news and go behind the scenes at Longchamp.</p>
+        </div>
+    </div>
+    <div class="swiper__block" id="news">
+        <div class="newSlider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="article" href="#">
+                        <div class="article-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwfeb01f77/Articles/27-03-pierre-renard/850x960_pushedito.jpg"
+                                alt="Pierre Renart and Longchamp" itemprop="image">
+                        </div>
+                        <div class="article-info">
+                            <h4>Pierre Renart and Longchamp</h4>
+                            <p>at the Milan Design Week</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="article" href="#">
+                        <div class="article-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwfeb01f77/Articles/27-03-pierre-renard/850x960_pushedito.jpg"
+                                alt="Pierre Renart and Longchamp" itemprop="image">
+                        </div>
+                        <div class="article-info">
+                            <h4>Pierre Renart and Longchamp</h4>
+                            <p>at the Milan Design Week</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="article" href="#">
+                        <div class="article-img">
+                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwfeb01f77/Articles/27-03-pierre-renard/850x960_pushedito.jpg"
+                                alt="Pierre Renart and Longchamp" itemprop="image">
+                        </div>
+                        <div class="article-info">
+                            <h4>Pierre Renart and Longchamp</h4>
+                            <p>at the Milan Design Week</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev pc"></div>
+        <div class="swiper-button-next pc"></div>
+    </div>
+    <div class="action__center">
+        <a href="#" class="but-primary">DISCOVER</a>
+    </div>
+</div>
+
+<div class="block__section block__section--tabs">
+    <div class="tab__product">
+        <div class="tab__item active">
+            <div class="tab__item--img">
+                <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwb3e93d51/REVAMP-PLIAGE/PLIAGE-EPAULE.png"
+                    alt="tabname" />
+            </div>
+            <p class="tab__item--name">Shoulder bags</p>
+        </div>
+        <div class="tab__item">
+            <div class="tab__item--img">
+                <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw78e54eb2/REVAMP-PLIAGE/PLIAGE-MAINS.png"
+                    alt="alt" />
+            </div>
+            <p class="tab__item--name">Handbags</p>
+        </div>
+
+        <div class="tab__item">
+            <div class="tab__item--img">
+                <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwbb216f9c/REVAMP-PLIAGE/PLIAGE-VOYAGE.png"
+                    alt="img" />
+            </div>
+            <p class="tab__item--name">Travel bags</p>
+        </div>
+
+        <div class="tab__item">
+            <div class="tab__item--img">
+                <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwddab7a23/REVAMP-PLIAGE/LE-PLIAGE-SAC-A-DOS-600x600px.png"
+                    alt="img" />
+            </div>
+            <p class="tab__item--name">Backpacks</p>
+        </div>
+
+        <div class="tab__item">
+            <div class="tab__item--img">
+                <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw1ba582b9/REVAMP-PLIAGE/LE-PLIAGE-CABAS-600x600px-petit.png"
+                    alt="img" />
+            </div>
+            <p class="tab__item--name">Tote Bags</p>
+        </div>
+
+        <div class="tab__item">
+            <div class="tab__item--img">
+                <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw90a7be2e/REVAMP-PLIAGE/PLIAGE-ACCESS.png"
+                    alt="img" />
+            </div>
+            <p class="tab__item--name">Pouches</p>
+        </div>
+    </div>
+</div>
+
+<div class="block__section block__section--normal__tab">
+    <ul class="normal__tab">
+        <li class="normal__tab--item active">LE PLIAGE GREEN AND ORIGINAL</li>
+        <li class="normal__tab--item">LE PLIAGE XTRA</li>
+    </ul>
+</div>
+
+<div class="block__section block__section--artImg">
+    <div class="swiper__block" id="artImgBlock">
+        <div class="artImgSlider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="art__item">
+                        <div class="art__img">
+                            <img class="art__img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="art__img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                        </div>
                     </div>
                 </div>
-
-                <div class="product__section">
-                    <div class="block__title">
-                        <h2>A BOHEMIAN TOUCH</h2>
-                        <div class="brief">
-                            <p>Discover summer-ready, nature-inspired pieces embodying life's passing pleasures. </p>
+                <div class="swiper-slide">
+                    <div class="art__item">
+                        <div class="art__img">
+                            <img class="art__img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="art__img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
                         </div>
-                    </div>
-                    <div class="no-gutters">
-                        <div class="region">
-                            <div class="region-sticky">
-                                <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw0853091b/HOMEPAGE/2025-04-08-vitamin-c/1020x1175-Mobile-Inspiration.jpg"
-                                    alt="img" />
-                            </div>
-                        </div>
-                        <div class="region">
-                            <div class="region-list">
-                                <div class="region-item">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="region-item">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="region-item">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="region-item">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="region-item">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="region-item">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="region-item">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="region-item">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                            </h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="action__center">
-                        <a href="#" class="but-primary">DISCOVER OUR SELECTION</a>
                     </div>
                 </div>
-
-                <div class="block__section">
-                    <div class="block__title">
-                        <h2>ELEGANCE IN MOTION</h2>
-                        <div class="brief">
-                            <p>Make every trip a joyful adventure.</p>
-                            <p>Discover unrivalled leather accessories crafted to last.</p>
+                <div class="swiper-slide">
+                    <div class="art__item">
+                        <div class="art__img">
+                            <img class="art__img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="art__img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
                         </div>
-                    </div>
-                    <div class="swiper__block" id="motion">
-                        <div class="motionSlider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a class="motion" href="#">
-                                        <div class="motion-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
-                                                alt="pic" />
-                                        </div>
-                                        <div class="motion-txt">
-                                            <span class="motion__title">Bags</span>
-                                            <div class="icon-svg">
-                                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
-                                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337"
-                                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="motion" href="#">
-                                        <div class="motion-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
-                                                alt="pic" />
-                                        </div>
-                                        <div class="motion-txt">
-                                            <span class="motion__title">Bags</span>
-                                            <div class="icon-svg">
-                                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
-                                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337"
-                                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="motion" href="#">
-                                        <div class="motion-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
-                                                alt="pic" />
-                                        </div>
-                                        <div class="motion-txt">
-                                            <span class="motion__title">Bags</span>
-                                            <div class="icon-svg">
-                                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
-                                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337"
-                                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="motion" href="#">
-                                        <div class="motion-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
-                                                alt="pic" />
-                                        </div>
-                                        <div class="motion-txt">
-                                            <span class="motion__title">Bags</span>
-                                            <div class="icon-svg">
-                                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
-                                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337"
-                                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="motion" href="#">
-                                        <div class="motion-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
-                                                alt="pic" />
-                                        </div>
-                                        <div class="motion-txt">
-                                            <span class="motion__title">Bags</span>
-                                            <div class="icon-svg">
-                                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
-                                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337"
-                                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="motion" href="#">
-                                        <div class="motion-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw24df142f/HOMEPAGE/2025-04-08-vitamin-c/630x900-Desktop-Categories-Redirect-Bags.jpg"
-                                                alt="pic" />
-                                        </div>
-                                        <div class="motion-txt">
-                                            <span class="motion__title">Bags</span>
-                                            <div class="icon-svg">
-                                                <svg class="symbol--motion" aria-hidden="true" focusable="false">
-                                                    <path d="M7.1665 16H25.8332" stroke="#fff" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M21.8335 10.667L27.1668 16.0003L21.8335 21.3337"
-                                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination sp"></div>
-                        <div class="swiper-button-prev pc"></div>
-                        <div class="swiper-button-next pc"></div>
                     </div>
                 </div>
-
-                <div class="block__section">
-                    <div class="block__title">
-                        <div class="horse-icon">
-                            <svg alt="horse stamp">
-                                <use xlink:href="#symbol-stamp"></use>
-                            </svg>
+                <div class="swiper-slide">
+                    <div class="art__item">
+                        <div class="art__img">
+                            <img class="art__img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="art__img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
                         </div>
-                        <h2>NEW SPRING/SUMMER 2025 COLLECTION</h2>
-                        <div class="brief">
-                            <p>Create looks that embody raw, elegant character inspired by nature-centric living.</p>
-                        </div>
-                    </div>
-                    <div class="swiper__block" id="collection">
-                        <div class="collectionSlider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a class="collection" href="#">
-                                        <div class="collection-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw48dda06b/HOMEPAGE/2025-01-07-vegetable-garden-la-parisienne/630x900-Lookbook-01.jpg"
-                                                alt="pic" />
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="collection" href="#">
-                                        <div class="collection-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw48dda06b/HOMEPAGE/2025-01-07-vegetable-garden-la-parisienne/630x900-Lookbook-01.jpg"
-                                                alt="pic" />
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="collection" href="#">
-                                        <div class="collection-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dw48dda06b/HOMEPAGE/2025-01-07-vegetable-garden-la-parisienne/630x900-Lookbook-01.jpg"
-                                                alt="pic" />
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                    <div class="action__center">
-                        <a href="#" class="but-primary">VIEW ALL LOOKS</a>
                     </div>
                 </div>
-
-                <div class="block__section">
-                    <div class="block__title">
-                        <div class="horse-icon">
-                            <svg alt="horse stamp">
-                                <use xlink:href="#symbol-stamp"></use>
-                            </svg>
+                <div class="swiper-slide">
+                    <div class="art__item">
+                        <div class="art__img">
+                            <img class="art__img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="art__img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
                         </div>
-                        <h2>ONCE LE PLIAGE, FOREVER LE PLIAGE</h2>
-                        <div class="brief">
-                            <p>True to form, Le Pliage bends to your will.</p>
-                            <p>Embrace the colour of its iconic canvas for the new season!</p>
-                        </div>
-                    </div>
-                    <div class="swiper__block" id="product">
-                        <div class="productSlider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                                <div class="product-item__price">
-                                                    <span class="price-formatted">S$240.00</span>
-                                                </div>
-                                            </h3>
-                                        </div>
-                                        <div class="product-meta">
-                                            <div class="meta-tag">
-                                                <span class="meta-tag--item">Recycled materials</span>
-                                            </div>
-                                            <div class="meta-wishlist">
-                                                <svg class="icon-heart">
-                                                    <use xlink:href="#symbol-wishHeart-o"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                                <div class="product-item__price">
-                                                    <span class="price-formatted">S$240.00</span>
-                                                </div>
-                                            </h3>
-                                        </div>
-                                        <div class="product-meta">
-                                            <div class="meta-tag">
-                                                <span class="meta-tag--item">Recycled materials</span>
-                                            </div>
-                                            <div class="meta-wishlist">
-                                                <svg class="icon-heart">
-                                                    <use xlink:href="#symbol-wishHeart-o"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                                <div class="product-item__price">
-                                                    <span class="price-formatted">S$240.00</span>
-                                                </div>
-                                            </h3>
-                                        </div>
-                                        <div class="product-meta">
-                                            <div class="meta-tag">
-                                                <span class="meta-tag--item">Recycled materials</span>
-                                            </div>
-                                            <div class="meta-wishlist">
-                                                <svg class="icon-heart">
-                                                    <use xlink:href="#symbol-wishHeart-o"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                                <div class="product-item__price">
-                                                    <span class="price-formatted">S$240.00</span>
-                                                </div>
-                                            </h3>
-                                        </div>
-                                        <div class="product-meta">
-                                            <div class="meta-tag">
-                                                <span class="meta-tag--item">Recycled materials</span>
-                                            </div>
-                                            <div class="meta-wishlist">
-                                                <svg class="icon-heart">
-                                                    <use xlink:href="#symbol-wishHeart-o"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                                <div class="product-item__price">
-                                                    <span class="price-formatted">S$240.00</span>
-                                                </div>
-                                            </h3>
-                                        </div>
-                                        <div class="product-meta">
-                                            <div class="meta-tag">
-                                                <span class="meta-tag--item">Recycled materials</span>
-                                            </div>
-                                            <div class="meta-wishlist">
-                                                <svg class="icon-heart">
-                                                    <use xlink:href="#symbol-wishHeart-o"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
-                                        <div class="product-img">
-                                            <img class="product-img--first"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                            <img class="product-img--second cropped"
-                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
-                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
-                                                itemprop="image">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-color">
-                                                <li class="selected">
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                                <li>
-                                                    <span class="product-color--item" title="Blush"></span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <span class="product-item__line">Le Pliage Collection M Shoulder
-                                                    bag</span>
-                                                <span class="product-item__style">Blush - Canvas</span>
-                                                <div class="product-item__price">
-                                                    <span class="price-formatted">S$240.00</span>
-                                                </div>
-                                            </h3>
-                                        </div>
-                                        <div class="product-meta">
-                                            <div class="meta-tag">
-                                                <span class="meta-tag--item">Recycled materials</span>
-                                            </div>
-                                            <div class="meta-wishlist">
-                                                <svg class="icon-heart">
-                                                    <use xlink:href="#symbol-wishHeart-o"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination sp"></div>
-                        <div class="swiper-button-prev pc"></div>
-                        <div class="swiper-button-next pc"></div>
                     </div>
                 </div>
-
-                <div class="block__section">
-                    <div class="block__title">
-                        <div class="horse-icon">
-                            <svg alt="horse stamp">
-                                <use xlink:href="#symbol-stamp"></use>
-                            </svg>
-                        </div>
-                        <h2>News</h2>
-                        <div class="brief">
-                            <p>Stay up to date with our latest news and go behind the scenes at Longchamp.</p>
+                <div class="swiper-slide">
+                    <div class="art__item">
+                        <div class="art__img">
+                            <img class="art__img--first"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
+                            <img class="art__img--second cropped"
+                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas" itemprop="image">
                         </div>
                     </div>
-                    <div class="swiper__block" id="news">
-                        <div class="newSlider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a class="article" href="#">
-                                        <div class="article-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwfeb01f77/Articles/27-03-pierre-renard/850x960_pushedito.jpg"
-                                                alt="Pierre Renart and Longchamp" itemprop="image">
-                                        </div>
-                                        <div class="article-info">
-                                            <h4>Pierre Renart and Longchamp</h4>
-                                            <p>at the Milan Design Week</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="article" href="#">
-                                        <div class="article-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwfeb01f77/Articles/27-03-pierre-renard/850x960_pushedito.jpg"
-                                                alt="Pierre Renart and Longchamp" itemprop="image">
-                                        </div>
-                                        <div class="article-info">
-                                            <h4>Pierre Renart and Longchamp</h4>
-                                            <p>at the Milan Design Week</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="article" href="#">
-                                        <div class="article-img">
-                                            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwfeb01f77/Articles/27-03-pierre-renard/850x960_pushedito.jpg"
-                                                alt="Pierre Renart and Longchamp" itemprop="image">
-                                        </div>
-                                        <div class="article-info">
-                                            <h4>Pierre Renart and Longchamp</h4>
-                                            <p>at the Milan Design Week</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev pc"></div>
-                        <div class="swiper-button-next pc"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination sp"></div>
+    <div class="swiper-button-prev pc"></div>
+    <div class="swiper-button-next pc"></div>
+</div>
+
+<div class="block__section block__section--hero">
+    <div class="hero">
+        <div class="hero__img">
+            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwc174a668/LP-MEN/2025-05-13-the-parisian-artisans/2200x1200-Desktop-Hero-Banner.jpg"
+                alt="banner" />
+        </div>
+    </div>
+</div>
+
+<div class="block__section block__section--hero">
+    <div class="hero">
+        <div class="hero__img">
+            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwd9c725dd/LP-COLLECTION/2025-05-13-the-parisian-ceramist/1920x1080-Desktop-Hero-Banner.jpg"
+                alt="banner" />
+        </div>
+        <div class="hero__txt">
+            <div class="hero__txt--content">
+                <h1>Fall-Winter 2025 Collection</h1>
+                <p>The Soul of Paris Through Its Artisans</p>
+                <div class="link">
+                    <a class="link__but"><span>SEE ALL THE COLLECTION</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block__section block__section--txtImg">
+    <div class="txt__img">
+        <div class="txt__img--txt">
+            <div class="txt__img--txt--content">
+                <h2>Living Craftsmanship: At The Heart of Your Style</h2>
+                <div class="brief">
+                    <p>Whether wandering the streets of Paris or
+                        exploring the world, our bags are your
+                        steadfast companions.</p>
+                </div>
+                <div class="action__center">
+                    <a href="#" class="but-primary">DISCOVER</a>
+                </div>
+            </div>
+        </div>
+        <div class="txt__img--img">
+            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwfeb01f77/Articles/27-03-pierre-renard/850x960_pushedito.jpg"
+                alt="Pierre Renart and Longchamp" itemprop="image">
+        </div>
+    </div>
+
+</div>
+
+<div class="block__section block__section--txtImg">
+    <div class="txt__img reverse">
+        <div class="txt__img--txt">
+            <div class="txt__img--txt--content">
+                <h2>Living Craftsmanship: At The Heart of Your Style</h2>
+                <div class="brief">
+                    <p>Whether wandering the streets of Paris or
+                        exploring the world, our bags are your
+                        steadfast companions.</p>
+                </div>
+                <div class="action__center">
+                    <a href="#" class="but-primary">DISCOVER</a>
+                </div>
+            </div>
+        </div>
+        <div class="txt__img--img">
+            <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwfeb01f77/Articles/27-03-pierre-renard/850x960_pushedito.jpg"
+                alt="Pierre Renart and Longchamp" itemprop="image">
+        </div>
+    </div>
+
+</div>
+
+<div class="block__section block__section--filter">
+    <div class="container">
+        <div class="filter">
+            <button class="btn-choice">
+                Collections
+                <span class="arrow_choice">
+                    <svg>
+                        <use xlink:href="#vector-up">
+                        </use>
+                    </svg>
+                </span>
+            </button>
+            <div class="filter__counter">
+                <div class="result--number">
+                    <span>1576 Items</span>
+                </div>
+                <button class="btn-sort">
+                    Filter &amp; sort
+                    <span class="filter__counter--selected"></span>
+                </button>
+                <div class="switch-wrapper">
+                    <span class="push-content--item active">
+                        <svg>
+                            <use xlink:href="#symbol-grid">
+                            </use>
+                        </svg>
+                    </span>
+                    <span class="push-content--item">
+                        <svg>
+                            <use xlink:href="#symbol-column">
+                            </use>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block__section block__section--accordion">
+    <div class="container">
+        <ul class="list_accordion">
+            <li>
+                <div class="accordion__header">
+                    <span class="accordion__title">Product Details</span>
+                    <svg class="symbol" aria-hidden="false" focusable="false" viewBox="0 0 100 100">
+                        <use xlink:href="#symbol-vector-right">
+                        </use>
+                    </svg>
+                </div>
+            </li>
+            <li>
+                <div class="accordion__header">
+                    <span class="accordion__title">Product Details</span>
+                    <svg class="symbol" aria-hidden="false" focusable="false" viewBox="0 0 100 100">
+                        <use xlink:href="#symbol-vector-right">
+                        </use>
+                    </svg>
+                </div>
+            </li>
+            <li>
+                <div class="accordion__header">
+                    <span class="accordion__title">Product Details</span>
+                    <svg class="symbol" aria-hidden="false" focusable="false" viewBox="0 0 100 100">
+                        <use xlink:href="#symbol-vector-right">
+                        </use>
+                    </svg>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="block__section block__section--breadcrumb">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="#">Longchamp</a></li>
+            <li><a href="#">Men</a></li>
+            <li><span>Small leader goods</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="block__section block__section--form">
+    <div class="container">
+        <form action="#" class="trackorder" method="GET" name="trackorder-form">
+
+            <div class="form-group">
+                <label class="form__field">
+                    <div class="form__label">Order number</div>
+                    <input type="text" class="form__input" id="trackorder-form-number" name="trackOrderNumber">
+                    <div class="invalid-feedback"></div>
+                </label>
+            </div>
+
+            <div class="form-group required">
+                <label class="form__field">
+                    <div class="form__label">Order - Email Address</div>
+                    <input type="text" class="form__input" pattern="^[\w.%+\-]+@[\w.\-]+\.[\w]{2,6}$" maxlength="50">
+                    <div class="invalid-feedback"></div>
+                </label>
+            </div>
+
+            <div class="form-group required">
+                <label class="form__field">
+                    <div class="form__label">Billing ZIP code</div>
+                    <input type="text" class="form__input" name="trackOrderPostal">
+                    <div class="invalid-feedback"></div>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button class="but-primary" type="submit" name="submit" value="submit">
+                    VIEW MY ORDER
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="block__section block__section--accordion">
+    <div class="container">
+        <ul class="list_accordion has__content">
+            <li>
+                <div class="accordion__header">
+                    <span class="accordion__title">Which delivery methods are available?</span>
+                    <svg class="symbol" aria-hidden="false" focusable="false" viewBox="0 0 100 100">
+                        <use xlink:href="#symbol-vector-right">
+                        </use>
+                    </svg>
+                </div>
+                <div class="accordion__content">
+                    <p>When placing your order, you'll be able to choose from 4 different delivery methods:</p>
+                    <p>The following will be shipped via Ground services only and <strong>cannot</strong> be sent
+                        Express or Overnight:</p>
+                    <p>- Orders going to <strong>Alaska, Hawaii</strong>, and Puerto Rico</p>
+                    <p>When making your purchase, select Collect in Store and choose the store where you'd like it to be
+                        delivered. We'll send you an email once your order is ready for collection. You will have ten
+                        (10) calendar days to come and pick up your parcel, effective from your reception of the email
+                        confirming your package's arrival at the Longchamp Boutique. We kindly ask that you come to your
+                        chosen Longchamp Store with a valid piece of original ID and your order number.</p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Shipping Type</td>
+                                <td>Estimated Delivery</td>
+                                <td>Cost</td>
+                            </tr>
+                            <tr>
+                                <td>Ground</td>
+                                <td>5-7 business days</td>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <td>Express</td>
+                                <td>2-3 business days</td>
+                                <td>$22</td>
+                            </tr>
+                            <tr>
+                                <td>Overnight</td>
+                                <td>Next business days</td>
+                                <td>$32</td>
+                            </tr>
+                            <tr>
+                                <td>Click &amp; Collect</td>
+                                <td>3 hours or 2-3 business days (depending on availability)</td>
+                                <td>Free</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="block__section block__section--txtImg">
+    <div class="container">
+        <div class="txt__img reverse size__37">
+            <div class="txt__img--txt txt__left">
+                <div class="txt__img--txt--content">
+                    <h2>Living Craftsmanship: At The Heart of Your Style</h2>
+                    <div class="brief">
+                        <p>Whether wandering the streets of Paris or
+                            exploring the world, our bags are your
+                            steadfast companions.</p>
                     </div>
                     <div class="action__center">
                         <a href="#" class="but-primary">DISCOVER</a>
                     </div>
                 </div>
+            </div>
+            <div class="txt__img--img">
+                <img src="https://www.longchamp.com/on/demandware.static/-/Library-Sites-LongchampSharedLibrary_revamp/default/dwfeb01f77/Articles/27-03-pierre-renard/850x960_pushedito.jpg"
+                    alt="Pierre Renart and Longchamp" itemprop="image">
+            </div>
+        </div>
+    </div>
+</div>
 
-                <footer class="footer">
+        <footer class="footer">
 
     <div class="footer__reassurance">
         <ul class="benefit">

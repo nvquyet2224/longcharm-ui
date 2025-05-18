@@ -86,24 +86,23 @@
             </div> -->
 
             <li class="header_top_item header_top_item--wishlist" title="My wishlist" id="block-wishlistlink">
-                <a href="javascript:void(0)" class="link wishlist">
-                    <div class="wishlistLogoChoice" data-actionurl="">
-                        <svg class="symbol" aria-hidden="true" id='wishlistLogo' focusable="false">
+                <a href="javascript:void(0)" class="icon-wishlist">
+                    <div class="wishlistLogoChoice">
+                        <svg>
                             <use xlink:href="#symbol-wishlink">
                             </use>
                         </svg>
-                        <label class="wihslistitem"></label>
                     </div>
                 </a>
             </li>
 
-            <div class="wishlist-content" id="overQuotaWishlistAll">
+            <!-- <div class="wishlist-content" id="overQuotaWishlistAll">
                 <div class="wishlist-contentasset mb-4">
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                         <strong>Your wishlist is full.</strong>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <li class="header_top_item sp" id="block-storepagelink-mobile">
                 <a href="https://www.longchamp.com/sg/en/stores?showMap=true"
@@ -117,8 +116,8 @@
             </li> -->
 
             <li class="header_top_item header_top_item--account" title="Account" id="block-myaccount">
-                <a href="javascript:void(0);" class="link" role="button" data-toggle="dropdown" aria-expanded="false">
-                    <svg class="symbol" aria-hidden="true" focusable="false">
+                <a href="javascript:void(0);" class="icon-myaccount">
+                    <svg>
                         <use xlink:href="#symbol-user-header">
                         </use>
                     </svg>
@@ -127,26 +126,14 @@
 
             <!--Stop Mobile Find in store-->
 
-            <li class="header_top_item header_top_item--minicart" id="block-shoppingbag"
-                data-action-url="/on/demandware.store/Sites-Longchamp-ASIA-Site/en_SG/Cart-MiniCartShow">
-                <a href="javascript:void(0);" data-link="https://www.longchamp.com/sg/en/cart" title=""
-                    data-title="Cart" class="link">
+            <li class="header_top_item header_top_item--minicart" id="block-shoppingbag">
+                <a href="javascript:void(0);" class="icon-shoppingbag">
                     <div class="quantityCart"><span class="minicart-quantity">0</span></div>
-                    <svg class="symbol" aria-hidden="true" focusable="false">
+                    <svg>
                         <use xlink:href="#symbol-bag-beta-header">
                         </use>
                     </svg>
                 </a>
-
-                <div class="popin-wrapper mini-cart">
-                    <button class="c-btn fs-m btn__close-cart"><span class="visually-hidden">Fermer</span>
-                        <svg class="symbol" aria-hidden="true" focusable="false">
-                            <use xlink:href="#symbol-close-cart">
-                            </use>
-                        </svg>
-                    </button>
-                    <div class="popover popover-bottom"></div>
-                </div>
 
             </li>
 
@@ -4537,7 +4524,7 @@
 
 </header>
 
-<div class="side" style="display: none;">
+<div class="side" id="wishListPop">
     <div class="side_wrap">
         <div class="side_header">
             <h2 class="side_title">My wishlist</h2>
@@ -4561,7 +4548,7 @@
 </div>
 
 
-<div class="side">
+<div class="side" id="accountPop">
     <div class="side_wrap">
         <div class="side_header">
             <h2 class="side_title">My Account</h2>
@@ -4575,32 +4562,79 @@
         <div class="side_body">
             <div class="login-menu">
                 <div class="my-account">
-                    <a href="javascript:void(0);" class="link flex flex-between">
+                    <a href="javascript:void(0);" class="link flex jus-b">
                         <span>Login</span>
-                        <svg class="symbol--s" focusable="false">
+                        <svg>
                             <use xlink:href="#symbol-vector">
                             </use>
                         </svg>
                     </a>
-                    <a href="https://www.longchamp.com/sg/en/signup"
-                        class="js-header-create-account link flex flex-between" role="button">
+                    <a href="https://www.longchamp.com/sg/en/signup" class="link flex jus-b" role="button">
                         <span>Create an account</span>
-                        <svg class="symbol--s" focusable="false">
+                        <svg>
                             <use xlink:href="#symbol-vector">
                             </use>
                         </svg>
                     </a>
                 </div>
                 <div class="my-account-track-orders">
-                    <a id="track-orders-btn" class="link flex flex-between"
-                        href="https://www.longchamp.com/sg/en/CheckOrder" title="Track orders">
+                    <a id="track-orders-btn" class="link flex jus-b" href="https://www.longchamp.com/sg/en/CheckOrder"
+                        title="Track orders">
                         <span>Track my order</span>
-                        <svg class="symbol--s" focusable="false">
+                        <svg>
                             <use xlink:href="#symbol-vector">
                             </use>
                         </svg>
                     </a>
                 </div>
+            </div>
+            <div class="login-form">
+                <div class="brief login-form--brief">It’s great to see you again!</div>
+                <ul class="tab__link">
+                    <li class="tab__link--item active">Login</li>
+                    <li class="tab__link--item"><a href="#">Create an acccount</a></li>
+                </ul>
+
+                <div class="form-group required">
+                    <label class="form__field">
+                        <div class="form__label">Email (name@domain.com) *<span
+                                class="link ml fs-s"><span>Show</span></span></div>
+                        <input type="email" class="form__input" pattern="^[\w.%+\-]+@[\w.\-]+\.[\w]{2,6}$"
+                            maxlength="50">
+                        <div class="invalid-feedback">Please match the requested format.</div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label class="form__field">
+                        <div class="form__label">Password *</div>
+                        <input type="password" class="form__input">
+                        <div class="invalid-feedback"></div>
+                        <div class="flex pt10">
+                            <a href="#" class="link ml fs-m"><span>Forgot password</span></a>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <button class="but-primary h52" type="submit">Login</button>
+                </div>
+
+                <div class="login-social">
+                    <p class="brief login-social--brief">Or with your preferred social network:</p>
+                    <div class="login-social--list flex">
+                        <a href="#" class="login-social--item">
+                            <svg>
+                                <use xlink:href="#symbol-fb"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="login-social--item">
+                            <img alt="pic"
+                                src="https://www.longchamp.com/on/demandware.static/Sites-Longchamp-NA-Site/-/default/dw72865679/img/svg/symbols/google.svg" />
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- <div class="side_footer">
@@ -4612,7 +4646,400 @@
     </div>
 </div>
 
-<div class="search">
+<div class="side" id="cartPop">
+    <div class="side_wrap">
+        <div class="side_header">
+            <h2 class="side_title">YOUR CART</h2>
+            <span class="side_close">
+                <svg class="symbol" focusable="false">
+                    <use xlink:href="#symbol-close-cart">
+                    </use>
+                </svg>
+            </span>
+        </div>
+        <div class="side_body">
+            <div class="cart">
+                <div class="cart-empty">
+                    <svg>
+                        <use xlink:href="#symbol-bag-beta-header">
+                        </use>
+                    </svg>
+                    <h4 class="upper">
+                        Your basket is empty
+                    </h4>
+                    <a class="but-primary" href="#">
+                        OUR RECOMMENDATIONS
+                    </a>
+                </div>
+                <div class="cart-recent">
+                    <h2 class="cart-title">Recently viewed</h2>
+                    <div class="cart-swiper">
+                        <div class="cartSlider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                                        <div class="product-img">
+                                            <img class="product-img--first"
+                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
+                                                itemprop="image">
+                                            <img class="product-img--second cropped"
+                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
+                                                itemprop="image">
+                                        </div>
+                                        <div class="product-info">
+                                            <ul class="product-color">
+                                                <li class="selected">
+                                                    <span class="product-color--item" title="Blush"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="product-color--item" title="Blush"></span>
+                                                </li>
+                                            </ul>
+                                            <h3>
+                                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                                    bag</span>
+                                                <span class="product-item__style">Blush - Canvas</span>
+                                                <div class="product-item__price">
+                                                    <span class="price-formatted">S$240.00</span>
+                                                </div>
+                                            </h3>
+                                        </div>
+                                        <div class="product-meta">
+                                            <div class="meta-tag">
+                                                <span class="meta-tag--item">Recycled materials</span>
+                                            </div>
+                                            <div class="meta-wishlist">
+                                                <svg class="icon-heart">
+                                                    <use xlink:href="#symbol-wishHeart-o"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                                        <div class="product-img">
+                                            <img class="product-img--first"
+                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
+                                                itemprop="image">
+                                            <img class="product-img--second cropped"
+                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
+                                                itemprop="image">
+                                        </div>
+                                        <div class="product-info">
+                                            <ul class="product-color">
+                                                <li class="selected">
+                                                    <span class="product-color--item" title="Blush"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="product-color--item" title="Blush"></span>
+                                                </li>
+                                            </ul>
+                                            <h3>
+                                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                                    bag</span>
+                                                <span class="product-item__style">Blush - Canvas</span>
+                                                <div class="product-item__price">
+                                                    <span class="price-formatted">S$240.00</span>
+                                                </div>
+                                            </h3>
+                                        </div>
+                                        <div class="product-meta">
+                                            <div class="meta-tag">
+                                                <span class="meta-tag--item">Recycled materials</span>
+                                            </div>
+                                            <div class="meta-wishlist">
+                                                <svg class="icon-heart">
+                                                    <use xlink:href="#symbol-wishHeart-o"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                                        <div class="product-img">
+                                            <img class="product-img--first"
+                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
+                                                itemprop="image">
+                                            <img class="product-img--second cropped"
+                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
+                                                itemprop="image">
+                                        </div>
+                                        <div class="product-info">
+                                            <ul class="product-color">
+                                                <li class="selected">
+                                                    <span class="product-color--item" title="Blush"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="product-color--item" title="Blush"></span>
+                                                </li>
+                                            </ul>
+                                            <h3>
+                                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                                    bag</span>
+                                                <span class="product-item__style">Blush - Canvas</span>
+                                                <div class="product-item__price">
+                                                    <span class="price-formatted">S$240.00</span>
+                                                </div>
+                                            </h3>
+                                        </div>
+                                        <div class="product-meta">
+                                            <div class="meta-tag">
+                                                <span class="meta-tag--item">Recycled materials</span>
+                                            </div>
+                                            <div class="meta-wishlist">
+                                                <svg class="icon-heart">
+                                                    <use xlink:href="#symbol-wishHeart-o"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="product" href="/en/en/products/shoulder-bag-m-10303HGG633.html">
+                                        <div class="product-img">
+                                            <img class="product-img--first"
+                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwb3214de0/images/DIS/10303HGG633_0.png?sw=400&amp;sh=400&amp;sm=fit"
+                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
+                                                itemprop="image">
+                                            <img class="product-img--second cropped"
+                                                src="https://www.longchamp.com/dw/image/v2/BCVX_PRD/on/demandware.static/-/Sites-LC-master-catalog/default/dwdce6827b/images/DIS/10303HGG633_1.png?sw=400&amp;sh=400&amp;sm=fit"
+                                                alt="Le Pliage Collection M Shoulder bag , Blush - Canvas"
+                                                itemprop="image">
+                                        </div>
+                                        <div class="product-info">
+                                            <ul class="product-color">
+                                                <li class="selected">
+                                                    <span class="product-color--item" title="Blush"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="product-color--item" title="Blush"></span>
+                                                </li>
+                                            </ul>
+                                            <h3>
+                                                <span class="product-item__line">Le Pliage Collection M Shoulder
+                                                    bag</span>
+                                                <span class="product-item__style">Blush - Canvas</span>
+                                                <div class="product-item__price">
+                                                    <span class="price-formatted">S$240.00</span>
+                                                </div>
+                                            </h3>
+                                        </div>
+                                        <div class="product-meta">
+                                            <div class="meta-tag">
+                                                <span class="meta-tag--item">Recycled materials</span>
+                                            </div>
+                                            <div class="meta-wishlist">
+                                                <svg class="icon-heart">
+                                                    <use xlink:href="#symbol-wishHeart-o"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination sp"></div>
+                        <div class="swiper-button-prev pc"></div>
+                        <div class="swiper-button-next pc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side_footer">
+            <div class="cart-total">
+                <div class="cart-total--item flex flex-jus">
+                    <span>Subtotal</span>
+                    <span>null</span>
+                </div>
+                <div class="cart-total--item flex flex-jus">
+                    <span>Shipping</span>
+                    <span>Free ground shipping</span>
+                </div>
+            </div>
+            <div class="cart_request">
+                <a class="but-primary" href="#">View cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="side" id="productDetailPop">
+    <div class="side_wrap">
+        <div class="side_header">
+            <h2 class="side_title">Product Details</h2>
+            <span class="side_close">
+                <svg class="symbol" focusable="false">
+                    <use xlink:href="#symbol-close-cart">
+                    </use>
+                </svg>
+            </span>
+        </div>
+        <div class="side_body">
+            <div class="product-detail">
+                <ul>
+                    <li>Reference : 10273HFPM12</li>
+                    <li>Dimensions : 7.9 in (L - measured at the base of the bag) x 7.9 in (H) x 5.3 in (W)</li>
+                    <li>Material : Cowhide leather</li>
+                    <li>Metallic Hardware : Silver color</li>
+                    <li>Lining : Recycled polyester - Jacquard Longchamp horses</li>
+                    <li>Weight : 1.19 lb</li>
+                    <li>Closing : Metal bamboo</li>
+                    <p>The leathers of Longchamp bags may have subtle variations. These reflect the vivid nature of the
+                        leathers used in our workshops and reveal the authenticity of their appearance as well as their
+                        exceptional quality.</p>
+                </ul>
+                <h4>Exterior details</h4>
+                <ul>
+                    <li>Handle Height : 9 cm / 3.5 in
+                    </li>
+                    <li>Strap : Adjustable and removable</li>
+                    <li>Strap length : 60- cm / 23.6- in</li>
+                </ul>
+                <h3>interior details</h3>
+                <ul>
+                    <li>Zipped pocket : 1</li>
+                    <li>Flat pocket : 1</li>
+                    <li>Pen pocket : 1</li>
+                    <li>Credit card space : 2</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="side" id="filterPop">
+    <div class="side_wrap">
+        <div class="side_header">
+            <h2 class="side_title">Filter & sort</h2>
+            <span class="side_close">
+                <svg class="symbol" focusable="false">x
+                    <use xlink:href="#symbol-close-cart">
+                    </use>
+                </svg>
+            </span>
+        </div>
+        <div class="side_body">
+            <div class="filter__condition">
+                <ul class="list_accordion has__content">
+                    <li>
+                        <div class="accordion__header">
+                            <span class="accordion__title">Sort by</span>
+                            <svg class="symbol" aria-hidden="false" focusable="false" viewBox="0 0 100 100">
+                                <use xlink:href="#symbol-vector-right">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="radio__list">
+                                <li class="radio__item active">
+                                    <span>Descending Price</span>
+                                    <span class="radio__icon"></span>
+                                </li>
+                                <li class="radio__item">
+                                    <span>Best Sellers</span>
+                                    <span class="radio__icon"></span>
+                                </li>
+                                <li class="radio__item">
+                                    <span>New</span>
+                                    <span class="radio__icon"></span>
+                                </li>
+                                <li class="radio__item">
+                                    <span>Recommended</span>
+                                    <span class="radio__icon"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list_accordion has__content">
+                    <li>
+                        <div class="accordion__header">
+                            <span class="accordion__title">Sort by</span>
+                            <svg class="symbol" aria-hidden="false" focusable="false" viewBox="0 0 100 100">
+                                <use xlink:href="#symbol-vector-right">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content">
+                            <ul class="check__list">
+                                <li class="check__item active">
+                                    <span>LINE</span>
+                                    <span class="check__icon"></span>
+                                </li>
+                                <li class="check__item">
+                                    <span>Best Sellers</span>
+                                    <span class="check__icon"></span>
+                                </li>
+                                <li class="check__item">
+                                    <span>New</span>
+                                    <span class="check__icon"></span>
+                                </li>
+                                <li class="check__item">
+                                    <span>Recommended</span>
+                                    <span class="check__icon"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="side" id="collectionPop">
+    <div class="side_wrap">
+        <div class="side_header">
+            <h2 class="side_title">Women</h2>
+            <span class="side_close">
+                <svg class="symbol" focusable="false">x
+                    <use xlink:href="#symbol-close-cart">
+                    </use>
+                </svg>
+            </span>
+        </div>
+        <div class="side_body">
+            <div class="collection__block">
+                <ul class="collection__nav">
+                    <li>
+                        <a href="#">Highlights</a>   
+                    </li>
+                    <li>
+                        <a href="#">Bags</a>   
+                    </li>
+                    <li>
+                        <a href="#">Small leather goods</a>   
+                    </li>
+                    <li>
+                        <a href="#">Accessories</a>   
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>   
+                    </li>
+                    <li>
+                        <a href="#">Ready-to-wear</a>   
+                    </li>
+                    <li>
+                        <a href="#">Shoes</a>   
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="search" id="serchPop">
     <div class="search_container">
         <div class="search_inr">
             <div class="search_form">

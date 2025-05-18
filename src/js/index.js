@@ -213,6 +213,42 @@ function artImgGallery() {
 }
 
 
+function recentGallery() {
+  if (document.querySelector(".cartSlider")) {
+    new Swiper(".cartSlider", {
+      modules: [Navigation],
+      effect: "slide",
+      loop: false,
+      speed: 800,
+      preloadImages: false,
+      lazy: true,
+      slidesPerView: 2,
+      spaceBetween: 4,
+      freeMode: true,
+      grabCursor: true,
+      allowTouchMove: true,
+      watchOverflow: true,
+      breakpoints: {
+        1023: {
+          slidesPerView: 2,
+          spaceBetween: 4
+        }
+      },
+      navigation: {
+        nextEl: ".cart-swiper .swiper-button-next",
+        prevEl: ".cart-swiper .swiper-button-prev",
+      },
+      on: {
+        init: function (swiper) { },
+        transitionStart: function () {
+        },
+        transitionEnd: function () { },
+      },
+    });
+  }
+
+}
+
 
 function onScroll() {
   var windowH = 0;
@@ -300,6 +336,7 @@ function onScroll() {
 
 }
 
+
 (function () {
   onScroll();
   motionGallery();
@@ -307,4 +344,6 @@ function onScroll() {
   productGallery();
   newGallery();
   artImgGallery();
+
+  recentGallery();  
 })();

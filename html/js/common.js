@@ -60,8 +60,88 @@ function toggleAccordion() {
   });
 }
 
+
+function openPinOverlay() {
+  $('.popin-overlay').addClass('show');
+}
+
+
+function closePinOverlay() {
+  $('.popin-overlay').removeClass('show');
+}
+
+function openWishList() {
+  $(document).on('click', '#block-wishlistlink', function () {
+    $('#wishListPop').addClass('active');
+    openPinOverlay();
+  });
+}
+
+function openAccount() {
+  $(document).on('click', '#block-myaccount', function () {
+    $('#accountPop').addClass('active');
+    openPinOverlay();
+  });
+}
+
+function openCart() {
+  $(document).on('click', '#block-shoppingbag', function () {
+    $('#cartPop').addClass('active');
+    openPinOverlay();
+  });
+}
+
+
+function openFilter() {
+  $(document).on('click', '.btn-sort', function () {
+    $('#filterPop').addClass('active');
+    openPinOverlay();
+  });
+}
+
+
+function openProductDetail() {
+  $(document).on('click', '.open__ProductInfo .accordion__header', function () {
+    $('#productDetailPop').addClass('active');
+    openPinOverlay();
+  });
+}
+
+
+function openCollection() {
+  $(document).on('click', '.btn-choice', function () {
+    $('#collectionPop').addClass('active');
+    openPinOverlay();
+  });
+}
+
+
+
+function closeSide() {
+  $(document).on('click', '.side_close, .popin-overlay', function () {
+    $('.side').removeClass('active');
+    closePinOverlay();
+  });
+}
+
+
+
+
 (function () {
   navClick();
+  openWishList();
+  openAccount();
+  openCart();
+  openCollection();
+  openFilter();
+  openProductDetail();
+
+
+
+  closeSide();
+
   toggleAccordion();
+
+  //$('#filterPop').addClass('active');
 
 })();

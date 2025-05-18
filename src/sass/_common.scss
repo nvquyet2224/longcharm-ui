@@ -48,6 +48,16 @@ a {
   color: #000;
 }
 
+.scroll-sus {
+  scrollbar-width: thin;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.uppper {
+  text-transform: uppercase;
+}
 .iframe--video {
   position: relative;
   width: 100%;
@@ -99,13 +109,41 @@ a {
     width: 0;
     height: 2px;
     background-color: var(--global-color);
+    -webkit-transition: opacity .25s;
     transition: opacity .25s;
+    -webkit-transition: width .25s ease-in-out;
     transition: width .25s ease-in-out;
   }
 
   &:hover {
     &::before {
       width: 100%;
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
+  span {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background-color: var(--global-color);
+      transition: opacity .25s;
+      transition: width .25s ease-in-out;
+    }
+  }
+
+  &:hover {
+    span {
+      &::before {
+        width: 100%;
+      }
     }
   }
 }
@@ -215,6 +253,10 @@ p {
   -moz-appearance: none;
   appearance: none;
   transition: all .4s ease;
+
+  &.h52 {
+    height: 52px;
+  }
 
   &::after {
     content: '';
@@ -380,6 +422,18 @@ p {
   margin-right: auto;
 }
 
+.fs-s {
+  font-size: 0.625rem;
+}
+
+.fs-m {
+  font-size: 0.75rem;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
 .login_request {
   display: flex;
   padding: 0 4.375rem;
@@ -416,6 +470,12 @@ form input:not([type=checkbox]):not([type=radio]) {
   color: #000;
   -webkit-border-radius: 0;
   border-radius: 0;
+}
+
+.invalid-feedback {
+  padding-top: 0.25rem;
+  color: #dc3b33;
+  font-size: 85%;
 }
 
 
@@ -1075,6 +1135,55 @@ form input:not([type=checkbox]):not([type=radio]) {
 
 }
 
+.tab__link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.125em;
+
+  &--item {
+    position: relative;
+    margin: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #565656;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: var(--global-color);
+      bottom: -4px;
+      transition: width 0.3s ease;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%;
+    }
+
+    &.active {
+      font-weight: 700;
+      color: #000;
+
+      &::before {
+        width: 100%;
+      }
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+  }
+}
+
 .normal {
   &__tab {
     display: flex;
@@ -1295,7 +1404,7 @@ form input:not([type=checkbox]):not([type=radio]) {
 }
 
 .list_accordion {
-  li {
+  > li {
     position: relative;
     width: 100%;
 
